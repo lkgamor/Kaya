@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/buttonShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/btn_shape"
+        android:text="SHOW"
+        android:visibility="invisible" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab1_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonShow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        app:fabSize="normal"
+        android:src="@drawable/ic_truck_black_24dp"
+        android:visibility="gone" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab2_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="40dp"
+        android:layout_toEndOf="@+id/buttonShow"
+        app:fabSize="normal"
+        android:src="@drawable/ic_motorcycle_black_24dp"
+        android:visibility="gone" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab3_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonShow"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        app:fabSize="normal"
+        android:src="@drawable/ic_van_black_24dp"
+        android:visibility="gone" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab4_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="40dp"
+        android:layout_toStartOf="@+id/buttonShow"
+        app:fabSize="normal"
+        android:src="@drawable/ic_bike_black_24dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

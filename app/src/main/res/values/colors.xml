@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#1c2541</color>
+    <color name="colorAccent">#2a3556</color>
+    <color name="colorTransparent">#cecdcd</color>
+    <color name="colorWhite">#2a3556</color>
+    <color name="takePicColor">#ecb309</color>
+    <color name="editPicColor">#ec4d09</color>
+    <color name="black_overlay">#8e000000</color>
+    <color name="appBackground">#e7e7e7</color>
+    <color name="colorSuccessBtn">#2b930f</color>
+    <color name="dot_active">#000000</color>
+    <color name="dot_inactive">#cccccc</color>
+    <color name="cardview_backgroundColor">#2a3556</color>
+
+    <color name="colorFAB1">#7a4cd1</color>
+    <color name="colorFAB2">#E040FB</color>
+    <color name="colorFAB3">#ec7615</color>
+    <color name="colorFAB4">#c2341b</color>
+    <color name="colorFAB5">#e1c80b</color>
+
+    <color name="callHotelBtnColor">#66a712</color>
+    <color name="callHotelTxtColor">#fff</color>
+    <color name="grey_100">#F5F5F5</color>
+    <color name="grey_300">#E0E0E0</color>
+
+    <color name="colorPrimaryX">#4169e1</color>
+</resources>

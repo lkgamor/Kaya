@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".BikeActivity"
+    tools:showIn="@layout/activity_bike">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/activity_horizontal_margin">
+
+                <LinearLayout
+                    android:id="@+id/innerLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="0.5"
+                        android:background="@color/colorPrimary"
+                        android:orientation="horizontal"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="3dp"
+                        app:contentPaddingTop="10dp"
+                        app:contentPaddingLeft="20dp"
+                        app:contentPaddingRight="20dp"
+                        app:contentPaddingBottom="20dp">
+
+                        <LinearLayout
+                            android:id="@+id/relativeLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:text="Delivery Information"
+                                android:textColor="@color/dot_active"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textSize="22sp" />
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="80dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="10dp"
+                                android:src="@drawable/form"/>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/textLayout1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/et_prodName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawablePadding="10dp"
+                                    android:drawableStart="@drawable/ic_add_circle_black_24dp"
+                                    android:hint="@string/product_name"
+                                    android:imeOptions="actionUnspecified"
+                                    android:inputType="textAutoComplete"
+                                    android:maxLines="1"
+                                    android:textColor="@color/cardview_backgroundColor"
+                                    android:textSize="15sp" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/textLayout2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/et_prodDesc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawablePadding="10dp"
+                                    android:drawableStart="@drawable/ic_add_circle_black_24dp"
+                                    android:hint="@string/product_description"
+                                    android:imeOptions="actionUnspecified"
+                                    android:inputType="textAutoComplete"
+                                    android:maxLines="1"
+                                    android:textColor="@color/cardview_backgroundColor"
+                                    android:textSize="15sp" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/textLayout3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/et_senderName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawablePadding="10dp"
+                                    android:drawableStart="@drawable/ic_username"
+                                    android:hint="@string/sender_name"
+                                    android:imeOptions="actionUnspecified"
+                                    android:inputType="textAutoComplete"
+                                    android:maxLines="1"
+                                    android:textColor="@color/cardview_backgroundColor"
+                                    android:textSize="15sp" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/textLayout4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/et_senderPhone"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawablePadding="10dp"
+                                    android:drawableStart="@drawable/ic_phone"
+                                    android:hint="@string/your_phone_number"
+                                    android:imeOptions="actionUnspecified"
+                                    android:inputType="phone"
+                                    android:maxLength="10"
+                                    android:maxLines="1"
+                                    android:textColor="@color/cardview_backgroundColor"
+                                    android:textSize="15sp" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/textLayout5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/et_receiverName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawablePadding="10dp"
+                                    android:drawableStart="@drawable/ic_username"
+                                    android:hint="@string/receiver_name"
+                                    android:imeOptions="actionUnspecified"
+                                    android:inputType="textAutoComplete"
+                                    android:maxLines="1"
+                                    android:textColor="@color/cardview_backgroundColor"
+                                    android:textSize="15sp" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                            <android.support.design.widget.TextInputLayout
+                                android:id="@+id/textLayout6"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/et_receiverNumber"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawablePadding="10dp"
+                                    android:drawableStart="@drawable/ic_phone"
+                                    android:hint="@string/receiver_phone_number"
+                                    android:imeOptions="actionUnspecified"
+                                    android:inputType="phone"
+                                    android:maxLength="10"
+                                    android:maxLines="1"
+                                    android:textColor="@color/cardview_backgroundColor"
+                                    android:textSize="15sp" />
+
+                            </android.support.design.widget.TextInputLayout>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@color/colorPrimary"
+                        android:orientation="horizontal"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="3dp"
+                        app:contentPadding="10dp">
+
+                        <LinearLayout
+                            android:id="@+id/relativeLayout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:text="Pick-up Point | Destination"
+                                android:textColor="@color/dot_active"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textSize="22sp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:gravity="center_horizontal"
+                                android:text="Click below to provide the locations for your delivery"
+                                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/findAgent"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                app:cardBackgroundColor="@color/colorPrimary"
+                                android:drawableStart="@drawable/ic_person_pin_circle_black_24dp"
+                                app:cardCornerRadius="3dp"
+                                app:cardElevation="5dp"
+                                app:contentPadding="10dp"
+                                android:clickable="true"
+                                android:onClick="FIND_AGENT"
+                                android:layout_gravity="center_horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:text="ADD LOCATIONS"
+                                        android:textColor="@color/colorPrimaryX"
+                                        android:textSize="17sp" />
+
+                                </RelativeLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@color/colorPrimary"
+                        android:orientation="horizontal"
+                        app:cardCornerRadius="3dp"
+                        app:cardElevation="3dp"
+                        app:contentPadding="10dp">
+
+                        <RelativeLayout
+                            android:id="@+id/relativeLayout3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/textPayment"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="20dp"
+                                android:text="Payment Types"
+                                android:textColor="@color/dot_active"
+                                android:textStyle="bold"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:textSize="22sp" />
+
+                            <TextView
+                                android:id="@+id/textPayment1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="20dp"
+                                android:gravity="center_horizontal"
+                                android:layout_below="@+id/textPayment"
+                                android:text="Click below to select your mobile network provider and to complete the payment process"
+                                android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+                            <ImageView
+                                android:id="@+id/mtn"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_below="@+id/textPayment1"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginStart="20dp"
+                                android:src="@drawable/mtn" />
+
+                            <ImageView
+                                android:id="@+id/tigo"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_below="@+id/textPayment1"
+                                android:layout_toStartOf="@+id/mtn"
+                                android:src="@drawable/tigo" />
+
+                            <ImageView
+                                android:id="@+id/vodafone"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_below="@+id/textPayment1"
+                                android:layout_toEndOf="@+id/mtn"
+                                android:src="@drawable/vodafone" />
+
+                            <android.support.v7.widget.CardView
+                                android:id="@+id/btn_Make_Payment"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_below="@+id/tigo"
+                                app:cardBackgroundColor="@color/colorPrimary"
+                                app:cardCornerRadius="3dp"
+                                app:cardElevation="5dp"
+                                app:contentPadding="10dp"
+                                android:clickable="true"
+                                android:onClick="MAKE_PAYMENT"
+                                android:layout_centerHorizontal="true">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:text="MAKE PAYMENT"
+                                        android:textColor="@color/colorPrimaryX"
+                                        android:textSize="17sp"/>
+
+                                </RelativeLayout>
+
+                            </android.support.v7.widget.CardView>
+
+                        </RelativeLayout>
+
+                    </android.support.v7.widget.CardView>
+
+                    <Button
+                        android:id="@+id/btn_Request_Delivery"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/cardview_backgroundColor"
+                        android:onClick="MAKE_REQUEST"
+                        android:padding="5dp"
+                        android:text="@string/request_delivery"
+                        android:textColor="#FFF"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:targetApi="lollipop" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

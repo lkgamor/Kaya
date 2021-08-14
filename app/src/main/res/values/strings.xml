@@ -1,0 +1,140 @@
+<resources>
+    <string name="app_name">Kaya</string>
+
+    <string name="title_activity_demo">User Demo</string>
+    <string name="title_activity_app_menu">My Kaya</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="demo">APP DEMO</string>
+    <string name="none">none</string>
+    <string name="call">CALL</string>
+    <string name="start">Start</string>
+    <string name="next">Next</string>
+    <string name="prompt_user">Username</string>
+    <string name="prompt_phone">Phone</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_password_check">Verify Password</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="callD">000&#8211;000&#8211;0000</string>
+    <string name="whatsapp">000&#8211;000&#8211;0000</string>
+    <string name="e_mail_dev">kayamobile@gmail.com</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="click_an_option_below">Click to get connected</string>
+    <string name="about">This mobile app serves as.......</string>
+    <string name="title_activity_truck">Truck Delivery</string>
+    <string name="title_activity_bike">Bike Delivery</string>
+    <string name="title_activity_motor">Motor Delivery</string>
+    <string name="title_activity_van">Van Delivery</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="title_slide1">Select Delivery Mode</string>
+
+    <string name="desc_slide1">Choose from the available options how you would like your product to be delivered</string>
+
+    <string name="title_slide2">Add Locations</string>
+
+    <string name="desc_slide2">Select the location where your product will be picked and where it is going</string>
+
+    <string name="title_slide3">Make A Request</string>
+
+    <string name="desc_slide3">Perform your courier transaction and get your product picked up and delivered</string>
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="app_demo_text">Praesent nisi mauris, iaculis ut bibendum in, vehicula et diam. Proin pulvinar nulla in justo sollicitudin tincidunt. Aliquam tristique, lectus nec condimentum egestas, neque erat posuere purus, sed interdum elit est ut sem. Sed risus quam, facilisis vitae suscipit quis, mattis id nibh. Maecenas dignissim, nisl eget consectetur scelerisque, nisl nisi lobortis nisl, ultricies dictum diam neque at felis.
+        Praesent nisi mauris, iaculis ut bibendum in, vehicula et diam. Proin pulvinar nulla in justo sollicitudin tincidunt. Aliquam tristique, lectus nec condimentum egestas, neque erat posuere purus, sed interdum elit est ut sem. Sed risus quam, facilisis vitae suscipit quis, mattis id nibh. Maecenas dignissim, nisl eget consectetur scelerisque, nisl nisi lobortis nisl, ultricies dictum diam neque at felis.
+        Praesent nisi mauris, iaculis ut bibendum in, vehicula et diam. Proin pulvinar nulla in justo sollicitudin tincidunt. Aliquam tristique, lectus nec condimentum egestas, neque erat posuere purus, sed interdum elit est ut sem. Sed risus quam, facilisis vitae suscipit quis, mattis id nibh. Maecenas dignissim, nisl eget consectetur scelerisque, nisl nisi lobortis nisl, ultricies dictum diam neque at felis.
+        </string>
+    <string name="about_KAYA">Thank you for using KAYA \n\n Our main interest is to help you to get easily connected with certified courrier companies. With their expert services, you are certain your products will be delivered safely and timely with the best price charges.</string>
+    <string name="title_activity_find_agents_map">Map</string>
+    <string name="title_activity_login2">Sign In</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="place_picker_key">AIzaSyADzbUiCcFdDpMMHm_m0hKZDyi86vRgg9s</string>
+    <string name="title_place_picker">Choose Locations</string>
+
+    <string name="title_activity_activityign_up_success">ActivityignUpSuccess</string>
+    <string name="nextbtn">Next</string>
+
+    <string name="skipbtn">Skip</string>
+    <string name="add_picture">Add Picture</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_description">Product Description</string>
+    <string name="sender_name">Sender Name</string>
+    <string name="your_phone_number">Your Phone Number</string>
+    <string name="receiver_name">Receiver Name</string>
+    <string name="receiver_phone_number">Receiver Phone Number</string>
+    <string name="request_delivery">REQUEST DELIVERY</string>
+    <string name="request_successful">REQUEST SUCCESSFUL</string>
+    <string name="new_request">NEW REQUEST</string>
+    <string name="thank_you">Thank You \n for using our services &#8230;</string>
+    <string name="close_session">CLOSE SESSION</string>
+
+    <string name="title_activity_delivery_intro">Hi There!</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_delivery_page_info">DeliveryPageInfo</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>

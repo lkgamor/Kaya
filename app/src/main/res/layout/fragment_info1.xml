@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#79000000"
+    tools:context="com.example.louis.kaya.Info1">
+
+
+    <ImageView
+        android:id="@+id/expand"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/expand"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="45dp"
+        android:layout_alignParentEnd="true"/>
+
+    <ImageView
+        android:id="@+id/collapse"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/collapse"
+        android:layout_marginTop="-45dp"
+        android:layout_marginEnd="30dp"
+        android:layout_below="@+id/expand"
+        android:layout_alignParentEnd="true"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/delivery_info"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_below="@+id/collapse"
+        android:layout_alignParentStart="true"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/btn_Make_Payment"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:onClick="NEXT"
+        app:cardBackgroundColor="@color/cardview_backgroundColor"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="5dp"
+        app:contentPadding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="NEXT"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

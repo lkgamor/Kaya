@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "728602871806",
+    "firebase_url": "https://kaya-90d5f.firebaseio.com",
+    "project_id": "kaya-90d5f",
+    "storage_bucket": "kaya-90d5f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728602871806:android:ef24acd27455d02a",
+        "android_client_info": {
+          "package_name": "com.example.louis.kaya"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728602871806-vaco23c8shelgt093novtt5n673tf8f2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.louis.kaya",
+            "certificate_hash": "4f03b643a1805ee73fa3bc5947ee8cc4f8196d76"
+          }
+        },
+        {
+          "client_id": "728602871806-gdvhbk1lr0rfogbc70p30bkck0qqg97t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdcZzN0sP5UbKD2k2oXMH38PMSYY4DhFU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728602871806-gdvhbk1lr0rfogbc70p30bkck0qqg97t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

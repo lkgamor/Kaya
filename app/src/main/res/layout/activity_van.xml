@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.louis.kaya.VanActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:background="@color/cardview_backgroundColor"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleGravity="center_horizontal"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black_overlay"
+                android:clickable="false"/>
+
+
+            <ImageView
+                android:id="@+id/itemImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/van_delivery"/>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_van" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/selectedSitefab5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/fab_margin"
+        app:fabSize="mini"
+        app:layout_anchor="@id/toolbar_layout"
+        app:layout_anchorGravity="end|bottom"
+        app:backgroundTint="@color/colorFAB5"
+        android:src="@drawable/ic_arrow_drop_up_black_24dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/selectedSitefab4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/fab_margin"
+        app:fabSize="mini"
+        app:layout_anchor="@id/toolbar_layout"
+        app:layout_anchorGravity="end|bottom"
+        app:backgroundTint="@color/cardview_backgroundColor"
+        android:src="@drawable/ic_arrow_drop_down_black_24dp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/selectedSitefab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="140dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:visibility="visible"
+        app:elevation="6dp"
+        app:fabSize="mini"
+        android:onClick="START_SPEAKING"
+        app:backgroundTint="@color/colorFAB3"
+        app:pressedTranslationZ="12dp"
+        android:src="@drawable/ic_text_to_speech" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/selectedSitefab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/fab_margin"
+        app:elevation="6dp"
+        app:fabSize="mini"
+        android:onClick="STOP_SPEAKING"
+        app:backgroundTint="@color/colorPrimaryX"
+        app:pressedTranslationZ="12dp"
+        android:src="@drawable/ic_stop_black_24dp"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/selectedSitefab3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:elevation="6dp"
+        android:onClick="ABOUT_DELIVERY"
+        app:fabSize="mini"
+        app:backgroundTint="@color/colorFAB1"
+        app:pressedTranslationZ="12dp"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_help2_black_24dp"/>
+
+</android.support.design.widget.CoordinatorLayout>
